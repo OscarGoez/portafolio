@@ -1,0 +1,37 @@
+.header {
+    background-color: #282c34;
+    padding: 2rem;
+    min-height: 30%;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(255, 255, 255);    
+}
+
+.hOne {
+    color: rgb(77 195 195);;
+    font-size: 4rem;
+}
+.hTwo{
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .header {
+        padding: 1rem;
+        width: auto;
+        font-size: calc(25px + 1vmin);
+    }
+
+    
+    .hOne {
+        font-size: 3rem;
+    }
+    .hTwo {
+        font-size: 1.5rem;
+    }
+}

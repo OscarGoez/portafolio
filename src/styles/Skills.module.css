@@ -1,0 +1,140 @@
+.skills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    padding: 20px;
+    background-color: #e9e6e6;
+    box-sizing: border-box;
+}
+
+.hTwo {
+    margin: 0 auto;
+    font-size: 2rem;
+    padding: 20px;
+}
+
+.skillSection {
+    display: inline;
+    width: 60%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.personalSkills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+}
+
+.hThree {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 1%;
+    height: 100%;
+    width: 100%;
+}
+
+.personalName {
+    display: inline-block;
+    width:40%;
+    margin-left: 15%;
+}
+
+.personalProgress {
+    display: grid;
+    width: 50%;
+}
+
+.span {
+    padding: 0 20px;
+    text-align: left;
+    height: 2rem;
+    display: flex;
+}
+
+.progress {
+    margin-bottom: 0.6rem;
+}
+
+
+@media screen and (max-width: 900px) {
+    .personalSkills {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .personalName,
+    .personalProgress {
+        flex: 1 0 40%;
+        padding: 5px;
+    }
+
+    
+.skillSection {
+    display: inline;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.personalSkills {
+    display: flex;
+    justify-content: center;
+    width: 99%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.hThree {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 1%;
+    height: 100%;
+    width: 100%;
+}
+
+.personalName {
+    display: inline-block;
+    width:50%;
+    margin-left: 2%;
+}
+
+.personalProgress {
+    display: grid;
+    width: 50%;
+}
+
+    .progress {
+        height: 1rem;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    .span {
+        padding: 0.6px;
+        text-align: left;
+        height: 2rem;
+        display: flex;
+        margin-bottom: 0.1rem;
+    }
+
+    .progress {
+        margin-bottom: 0.6rem;
+    }
+}

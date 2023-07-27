@@ -1,0 +1,59 @@
+.contact {
+    width: auto;
+    height: 15rem;
+    padding: 20px;
+    background-color: #282c34;
+}    
+  
+  .heading {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 2rem;
+    color: rgb(77 195 195);;
+  }
+  
+  .contactInfo {
+    padding: 10px 0;    
+  }
+  
+  .subHeading {
+    margin: 0;
+    padding-bottom: 5px;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+  }
+  
+  .paragraph {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+  }
+  
+  .paragraph strong {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+  
+
+  @media screen and (max-width: 900px) {
+    .contact {
+      height: auto; 
+      width: auto;
+    }
+  
+    .contactInfo {
+      display: flex; 
+      flex-direction: column;
+      align-items: center; 
+    }
+  
+    .heading {
+      font-size: 1.5rem; 
+    }
+  
+    .subHeading,
+    .paragraph {
+      text-align: center; 
+    }
+  }

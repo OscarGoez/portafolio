@@ -1,0 +1,54 @@
+.aboutMe{
+    min-height: auto;
+    max-height: 25%;
+    display: inline-block;
+    background-color: rgb(48, 123, 123);
+}
+.personalInfo{
+    float: left;
+    min-width: 40%;
+    max-width: 50%;
+    margin-left: 10%;
+    padding: 2%;
+    margin: 0 auto;
+}
+.myself{
+    float: right;
+    min-width: 40%;
+    max-width: 50%;
+    margin-left: 10%;
+    padding: 2%;
+    margin: 0 auto;
+}
+.hTwo{
+    color: #ffffff;
+    font-size: 2rem;
+    padding-bottom: 8px;
+}
+.myself .paragraph{
+    color: #ffffff;
+    text-align: left;
+    letter-spacing: 1.5px;
+}
+.personalInfo .paragraph{
+    color: #ffffff;        
+    letter-spacing: 1.5px;
+}
+@media screen and (max-width: 770px) {
+    .personalInfo,
+    .myself {
+      float: none; 
+      min-width: 90%; 
+      margin-left: 0.7rem;
+    }
+  
+    .hTwo {
+      font-size: 1.5rem; 
+    }
+
+    .myself .paragraph{
+        color: #ffffff;        
+        letter-spacing: 1.5px;
+        text-align: justify;
+    }
+  }
