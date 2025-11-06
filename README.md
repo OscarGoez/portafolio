@@ -20,7 +20,7 @@ Puedes ver el portafolio desplegado aquí:
 🔗 [oscargoezh.web.app](https://oscargoezh.web.app/)
 
 Repositorio en GitHub:  
-📁 [github.com/oscargoezh/portafolio](https://github.com/oscargoezh/portafolio)
+📁 [github.com/oscargoezh/portafolio](https://github.com/oscargoez/portafolio)
 
 ## 📸 Vista previa
 
@@ -32,5 +32,5 @@ Repositorio en GitHub:
 
 - 📧 oscargoezhenao@gmail.com  
 - 💼 [LinkedIn](https://www.linkedin.com/in/oscargoezh) *(si tienes uno, agrégalo)*
-- 🐙 [GitHub](https://github.com/oscargoezh)
+- 🐙 [GitHub](https://github.com/oscargoez)
 
