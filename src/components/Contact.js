@@ -1,24 +1,79 @@
-import React from 'react';
-import styles from '../styles/Contact.module.css';
+import React from "react";
+import { Mail, Github, Linkedin, MapPin, Phone } from "lucide-react";
+import "../styles/ModernStyle.css";
+import { useLanguage } from "../context/LanguageContext";
 
 const Contact = () => {
-  return (
-    <div className={styles.contact}>
-      <h2 className={styles.heading}>Contacto</h2>
+  const { t } = useLanguage();
 
-      <div className={styles.contactInfo}>
-        <h4 className={styles.subHeading}>Quieres trabajar conmigo</h4>
-        <p className={styles.paragraph}>
-          Teléfono: <strong>310 5290842</strong>
-        </p>
-        <p className={styles.paragraph}>
-          Email: <strong>oscargoez11@gmail.com</strong>
-        </p>
-        <p className={styles.paragraph}>
-          Linkedin: <strong>www.linkedin.com/in/oscar-goez-henao</strong>
-        </p>
+  return (
+    <section className="section-wrapper contact-section" id="contact">
+      <h2>{t("navbar.contact")}</h2>
+
+      <div className="contact-grid">
+
+        {/* Correo */}
+        <div className="contact-card">
+          <Mail className="icon" size={28} />
+          <h3>Email</h3>
+          <p>
+            <a href="mailto:oscargoezhenao@gmail.com">oscargoezhenao@gmail.com</a>
+          </p>
+        </div>
+
+        {/* LinkedIn */}
+        <div className="contact-card">
+          <Linkedin className="icon" size={28} />
+          <h3>LinkedIn</h3>
+          <p>
+            <a
+              href="https://www.linkedin.com/in/oscargoez"
+              target="_blank"
+              rel="noreferrer"
+            >
+              linkedin.com/in/oscargoez
+            </a>
+          </p>
+        </div>
+
+        {/* GitHub */}
+        <div className="contact-card">
+          <Github className="icon" size={28} />
+          <h3>GitHub</h3>
+          <p>
+            <a
+              href="https://github.com/oscargoezh"
+              target="_blank"
+              rel="noreferrer"
+            >
+              github.com/oscargoezh
+            </a>
+          </p>
+        </div>
+
+        {/* WhatsApp */}
+        <div className="contact-card">
+          <Phone className="icon" size={28} />
+          <h3>WhatsApp</h3>
+          <p>
+            <a
+              href="https://wa.me/573105290842?text=Hola%20Oscar,%20vi%20tu%20portafolio%20y%20me%20gustaría%20contactarte."
+              target="_blank"
+              rel="noreferrer"
+            >
+              Escribeme por WhatsApp
+            </a>
+          </p>
+        </div>
+
+        {/* Ubicación */}
+        <div className="contact-card">
+          <MapPin className="icon" size={28} />
+          <h3>Ubicación</h3>
+          <p>Bello, Colombia</p>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

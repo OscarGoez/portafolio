@@ -1,0 +1,421 @@
+/* === Modern Portfolio — Optimized for Dark & Light Mode === */
+
+/* ==== Tipografía y Reset ==== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+/* ==== Variables base ==== */
+:root {
+  /* 🌞 Modo claro */
+  --bg: linear-gradient(180deg, #d5d7da, #b6b8ba);
+  --surface: #e9ecef;
+  --card: #f4f5f6;
+  --text: #1e293b;
+  --muted: #475569;
+  --accent: #007a9c;
+  --accent2: #00bcd4;
+  --shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  --radius: 14px;
+}
+
+[data-theme='dark'] {
+  /* 🌙 Modo oscuro */
+  --bg: linear-gradient(180deg, #0e141b, #101824);
+  --surface: #1a2633;
+  --card: #182231;
+  --text: #d1d5db;
+  --muted: #94a3b8;
+  --accent: #26b3d1;
+  --accent2: #2aa198;
+  --shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+}
+
+/* ==== Estructura general ==== */
+.App {
+  max-width: 1400px;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 4vw, 3rem);
+}
+
+/* ==== Navbar ==== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  box-shadow: var(--shadow);
+  z-index: 1000;
+  transition: background 0.3s ease;
+  flex-wrap: wrap;
+}
+
+[data-theme='dark'] .navbar {
+  background: rgba(15, 23, 32, 0.85);
+}
+
+.navbar a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: var(--accent);
+}
+
+/* ==== Secciones base ==== */
+.section-wrapper {
+  margin-top: 7rem;
+  margin-bottom: 4rem;
+}
+
+.section-block {
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 3rem 2rem;
+  margin-top: 3rem;
+}
+
+h2 {
+  text-align: center;
+  color: var(--accent);
+  font-size: clamp(1.6rem, 2vw, 2rem);
+  margin-bottom: 1.8rem;
+  font-weight: 700;
+}
+
+/* ==== Header / Perfil ==== */
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: linear-gradient(135deg, var(--surface), var(--card));
+  border-radius: var(--radius);
+  padding: 3rem 2rem;
+  box-shadow: var(--shadow);
+}
+
+.avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: var(--radius);
+  object-fit: cover;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+}
+
+.meta {
+  max-width: 600px;
+}
+
+.meta h1 {
+  color: var(--accent);
+  font-size: clamp(2rem, 3vw, 2.3rem);
+  margin-bottom: 0.4rem;
+}
+
+.meta h2 {
+  color: var(--text);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.meta p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.cta {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.btn {
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  color: #fff;
+  padding: 0.65rem 1.3rem;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ==== Proyectos ==== */
+.projects-section {
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 3rem 2rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 1.8rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  color: var(--accent);
+  margin-bottom: 0.6rem;
+}
+
+.project-card p {
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.tech-tags span {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  color: var(--text);
+}
+
+/* ==== About / Perfil Profesional ==== */
+.about-section {
+  margin-top: 3rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 2rem;
+}
+
+.about-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
+}
+
+.about-card.secondary {
+  background: var(--surface);
+}
+
+.highlight {
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.about-focus {
+  margin-top: 3rem;
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  text-align: center;
+}
+
+.focus-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.focus-item {
+  background: var(--card);
+  border-radius: 10px;
+  padding: 0.9rem 1.3rem;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease;
+}
+
+.focus-item:hover {
+  transform: translateY(-3px);
+}
+
+/* ==== Skills ==== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.skill-group {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.skill-group h3 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.skill-item {
+  background: var(--card);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.6rem;
+  box-shadow: var(--shadow);
+}
+
+/* ==== Contacto ==== */
+.contact-section {
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 3rem 2rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 1.8rem;
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+}
+
+.contact-card h3 {
+  color: var(--accent);
+  margin: 0.8rem 0 0.3rem;
+}
+
+.contact-card p {
+  color: var(--muted);
+}
+
+.contact-card a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+/* ==== Botón de tema ==== */
+.theme-toggle {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: var(--accent);
+  border: none;
+  color: #fff;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+  z-index: 1001;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+  background: var(--accent2);
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar {
+    gap: 1rem;
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+  }
+
+  .cta {
+    justify-content: center;
+  }
+
+  .projects-grid,
+  .about-grid,
+  .skills-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
