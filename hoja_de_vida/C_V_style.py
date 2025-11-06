@@ -120,7 +120,7 @@ section_heading.alignment = WD_ALIGN_PARAGRAPH.CENTER
 
 p = doc.add_paragraph(
     "📂 Portafolio Web: https://oscargoezh.web.app\n"
-    "💻 GitHub: https://github.com/oscargoezh\n\n"
+    "💻 GitHub: https://github.com/oscargoez\n\n"
     "Estos enlaces permiten explorar proyectos prácticos de automatización, análisis de datos y desarrollo web "
     "realizados con Python, RPA y React."
 )
