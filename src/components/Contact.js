@@ -42,11 +42,11 @@ const Contact = () => {
           <h3>GitHub</h3>
           <p>
             <a
-              href="https://github.com/oscargoezh"
+              href="https://github.com/oscargoez"
               target="_blank"
               rel="noreferrer"
             >
-              github.com/oscargoezh
+              github.com/oscargoez
             </a>
           </p>
         </div>

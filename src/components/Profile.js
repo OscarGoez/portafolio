@@ -24,7 +24,7 @@ const Profile = () => {
           </a>
           <a
             className="btn"
-            href="https://github.com/oscargoezh"
+            href="https://github.com/oscargoez"
             target="_blank"
             rel="noreferrer"
           >

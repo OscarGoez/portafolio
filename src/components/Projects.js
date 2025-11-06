@@ -10,13 +10,13 @@ const Projects = () => {
       title: t("projects.autoBot.title"),
       desc: t("projects.autoBot.desc"),
       tech: ["Python", "Pandas", "Selenium", "Yagmail"],
-      link: "https://github.com/oscargoezh/auto-report-bot",
+      link: "https://github.com/oscargoez/auto-report-bot",
     },
     {
       title: t("projects.pdfBot.title"),
       desc: t("projects.pdfBot.desc"),
       tech: ["Python", "PyPDF2", "OS"],
-      link: "https://github.com/oscargoezh/pdf-classifier",
+      link: "https://github.com/oscargoez/pdf-classifier",
     },
     {
       title: t("projects.medApp.title"),
