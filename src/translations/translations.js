@@ -40,10 +40,24 @@ export const translations = {
 
     experience: {
       title: "Experiencia Profesional",
+      roleAltipal: "Operario de Montacargas",
+      descAltipal:
+        "Organización y logística del almacén. Operación de montacargas asegurando el correcto flujo de la operación. Control y cuidado del inventario. Esta experiencia fortaleció mis competencias en procesos, organización y mejora continua.",      
       roleFreelancer: "Desarrollador y Automatizador de Procesos",
-      descFreelancer:
-        "Desarrollo de proyectos personales y empresariales enfocados en automatización, análisis de datos y desarrollo web. Implementación de bots con Python (Selenium, Yagmail, Pandas) y aplicaciones React/Node.js. Ejemplos: automatización de reportes Sisbén, clasificación de facturas PDF, sitios web (elretornogranja.web.app, hhomalactes.web.app).",
-      roleEnterdev: "Practicante Analista y Parametrizador RPA",
+      descFreelancer:(
+        <>
+          Desarrollo de proyectos personales y empresariales enfocados en automatización, análisis de datos y desarrollo web. Implementación de bots con Python (Selenium, Yagmail, Pandas) y aplicaciones React/Node.js. Ejemplos: automatización de reportes Sisbén, clasificación de facturas PDF, sitios web (
+          <a href="https://elretornogranja.web.app" target="_blank" rel="noopener noreferrer"className="link-color">
+            elretornogranja.web.app
+          </a>
+          ,{" "}
+          <a href="https://hhomalactes.web.app" target="_blank" rel="noopener noreferrer"className="link-color">
+            hhomalactes.web.app
+          </a>
+          ).
+        </>
+      ),
+        roleEnterdev: "Practicante Analista y Parametrizador RPA",
       descEnterdev:
         "Análisis y diseño de robots de automatización (RPA) basados en BPMN y requerimientos del cliente. Participación en pruebas funcionales, documentación técnica y parametrización de procesos digitales.",
       rolePostobon: "Operario de Montacargas / Logística",
@@ -138,9 +152,14 @@ export const translations = {
 
     experience: {
       title: "Professional Experience",
+      roleAltipal: "Forklift Operator",
+      descAltipal:
+        "Warehouse organization and logistics. Forklift operation ensuring the proper flow of operations. Inventory control and care. This experience strengthened my skills in processes, organization, and continuous improvement.",
+      
       roleFreelancer: "Developer and Process Automation Specialist",
       descFreelancer:
         "Development of automation, data analysis, and web projects for individuals and companies. Implementation of bots using Python (Selenium, Yagmail, Pandas) and React/Node.js apps. Examples: Sisbén report automation, PDF invoice classification, and web projects (elretornogranja.web.app, hhomalactes.web.app).",
+        
       roleEnterdev: "RPA Analyst & Process Parameterization Intern",
       descEnterdev:
         "Analysis and design of automation robots (RPA) based on BPMN and customer requirements. Participated in functional testing and process documentation.",

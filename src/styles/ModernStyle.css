@@ -394,6 +394,15 @@ h2 {
   transform: scale(1.1);
   background: var(--accent2);
 }
+.link-color {
+  color: #e6e6e6; /* verde */
+  text-decoration: none;
+}
+
+.link-color:hover {
+  text-decoration: underline;
+  color: #007a9c;
+}
 
 /* ==== Responsive ==== */
 @media (max-width: 900px) {

@@ -8,6 +8,13 @@ const Experience = () => {
 
   const experiences = [
     {
+      company: "Altipal",
+      position: t("experience.roleAltipal"),
+      time: "Septiembre 2023 — Marzo 2025",
+      icon: <Code2 className="exp-icon" />,
+      description: t("experience.descAltipal"),
+    },
+    {
       company: "Freelancer",
       position: t("experience.roleFreelancer"),
       time: "Enero 2023 — Presente",
