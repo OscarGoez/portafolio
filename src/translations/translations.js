@@ -98,8 +98,8 @@ export const translations = {
         desc: "Clasifica facturas según emisor y tipo, renombra y organiza archivos automáticamente en carpetas designadas.",
       },
       medApp: {
-        title: "Aplicación de Seguimiento Médico",
-        desc: "App no-code creada con AppSheet conectada a Google Sheets para automatizar recordatorios de citas y reportes médicos por correo electrónico.",
+        title: "Página Web Empresarial – HHO Elevadores y Malacates",
+        desc: "Sitio web profesional desarrollado para la empresa HHO Ascensores & Malacates. Presenta más de 20 años de experiencia, catálogo de productos industriales, procesos de trabajo y contacto directo. Diseñado para transmitir confianza, calidad y profesionalismo.",
       },
       view: "Ver Proyecto",
     },
@@ -201,8 +201,8 @@ export const translations = {
         desc: "Automatically classifies invoices by sender and type, renames, and organizes them into folders.",
       },
       medApp: {
-        title: "Medical Tracking App",
-        desc: "No-code AppSheet app integrated with Google Sheets to automate medical appointment reminders and email reports.",
+        title: "Business Website – HHO Elevadores y Malacates",
+        desc: "Professional website developed for HHO Ascensores & Malacates. Showcases over 20 years of experience, industrial product catalog, operational processes, and direct contact. Designed to convey trust, quality, and professionalism.",
       },
       view: "View Project",
     },

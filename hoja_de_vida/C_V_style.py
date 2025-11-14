@@ -110,7 +110,7 @@ doc.add_heading("Proyectos Destacados", level=1)
 doc.add_paragraph(
     "• Bot de Automatización Excel → Web → Reporte: lectura de archivos Excel, consultas online y envío automático de reportes.\n"
     "• Clasificador de Facturas PDF: organización y clasificación automática de documentos.\n"
-    "• App de Seguimiento Médico (AppSheet): aplicación no-code para recordatorios y reportes médicos automatizados."
+    "• Sitio web profesional desarrollado para la empresa HHO Ascensores & Malacates. https://ascensoreshho.web.app/"
 )
 
 # ---------- PORTAFOLIO Y GITHUB ----------

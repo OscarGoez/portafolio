@@ -21,8 +21,8 @@ const Projects = () => {
     {
       title: t("projects.medApp.title"),
       desc: t("projects.medApp.desc"),
-      tech: ["AppSheet", "Google Sheets", "Automatización"],
-      link: "https://oscargoezh.web.app",
+      tech: ["React", "Firebase Hosting", "Responsive UI"],
+      link: "https://github.com/OscarGoez/Ascensores_Malacates_hho"
     },
   ];
 
