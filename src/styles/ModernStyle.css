@@ -409,6 +409,7 @@ h2 {
   .header {
     flex-direction: column;
     text-align: center;
+    margin-top: 4rem;
   }
 
   .navbar {

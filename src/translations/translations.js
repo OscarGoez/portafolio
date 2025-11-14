@@ -13,7 +13,7 @@ export const translations = {
       name: "Oscar Goez Henao",
       role: "Automatización • Python • RPA • Data Analysis • React",
       description:
-        "Tecnólogo en Análisis y Desarrollo de Sistemas de Información con experiencia en automatización de procesos, análisis de datos y desarrollo web. Aplico la lógica de la programación para optimizar flujos operativos, reducir errores y mejorar la eficiencia mediante herramientas modernas como Python, Excel avanzado, Power Automate y RPA.",
+        "Tecnólogo en Análisis y Desarrollo de Sistemas de Información con experiencia en automatización de procesos, análisis de datos y desarrollo web. Aplico la lógica de la programación para optimizar flujos operativos, reducir errores y mejorar la eficiencia mediante herramientas modernas como Python, Excel y RPA.",
       download: "Descargar CV",
       contact: "Contactar",
       github: "GitHub",
@@ -125,7 +125,7 @@ export const translations = {
       name: "Oscar Goez Henao",
       role: "Automation • Python • RPA • Data Analysis • React",
       description:
-        "Technologist in Systems Analysis and Development with experience in process automation, data analysis, and web development. I apply programming logic to streamline workflows, reduce errors, and improve efficiency using Python, Advanced Excel, Power Automate, and RPA tools.",
+        "Technologist in Systems Analysis and Development with experience in process automation, data analysis, and web development. I apply programming logic to streamline workflows, reduce errors, and improve efficiency using Python, Advanced Excel and RPA tools.",
       download: "Download CV",
       contact: "Contact",
       github: "GitHub",
