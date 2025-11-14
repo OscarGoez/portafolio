@@ -51,8 +51,8 @@ export const translations = {
             elretornogranja.web.app
           </a>
           ,{" "}
-          <a href="https://hhomalactes.web.app" target="_blank" rel="noopener noreferrer"className="link-color">
-            hhomalactes.web.app
+          <a href="https://ascensoreshho.web.app" target="_blank" rel="noopener noreferrer"className="link-color">
+            ascensoreshho.web.app
           </a>
           ).
         </>
