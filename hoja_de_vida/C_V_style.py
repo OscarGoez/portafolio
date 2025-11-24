@@ -6,7 +6,7 @@ import os
 
 # Crear documento
 doc = Document()
-output_dir = r"D:\dev\portafolio"
+output_dir = r"X:\portafolio"
 output_docx = os.path.join(output_dir, "Hoja_de_vida_Oscar_Goez.docx")
 output_pdf = os.path.join(output_dir, "public\Hoja_de_vida_Oscar_Goez.pdf")
 
