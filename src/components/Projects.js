@@ -18,19 +18,21 @@ const Projects = () => {
       desc: t("projects.householdInventory.desc"),
       tech: ["React", "Vite", "Firebase", "Tailwind CSS", "PWA"],
       link: "#",
-      github: "#"
+      github: "https://github.com/OscarGoez/Gestor-de-compras"
     },
     {
       title: t("projects.autoBot.title"),
       desc: t("projects.autoBot.desc"),
       tech: ["Python", "Pandas", "Selenium", "Yagmail"],
-      link: "https://github.com/OscarGoez/Control_vacunas",
+      link: "#",
+      github:"https://github.com/OscarGoez/Control_vacunas"
     },
     {
       title: t("projects.pdfBot.title"),
       desc: t("projects.pdfBot.desc"),
       tech: ["Python", "PyPDF2", "OS"],
-      link: "https://github.com/OscarGoez/Organizador_Facturas",
+      link: "#",
+      github: "https://github.com/OscarGoez/Organizador_Facturas"
     },
     {
       title: t("projects.medApp.title"),
