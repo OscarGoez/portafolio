@@ -7,6 +7,20 @@ const Projects = () => {
 
   const projects = [
     {
+      title: t("projects.hhoSystem.title"),
+      desc: t("projects.hhoSystem.desc"),
+      tech: ["React", "Firebase", "Firestore", "JavaScript", "Tailwind CSS"],
+      link: "#",
+      github: "https://github.com/OscarGoez/hho-facturas"
+    },
+    {
+      title: t("projects.householdInventory.title"),
+      desc: t("projects.householdInventory.desc"),
+      tech: ["React", "Vite", "Firebase", "Tailwind CSS", "PWA"],
+      link: "#",
+      github: "#"
+    },
+    {
       title: t("projects.autoBot.title"),
       desc: t("projects.autoBot.desc"),
       tech: ["Python", "Pandas", "Selenium", "Yagmail"],
@@ -22,7 +36,8 @@ const Projects = () => {
       title: t("projects.medApp.title"),
       desc: t("projects.medApp.desc"),
       tech: ["React", "Firebase Hosting", "Responsive UI"],
-      link: "https://github.com/OscarGoez/Ascensores_Malacates_hho"
+      link: "https://ascensoreshho.web.app",
+      github: "https://github.com/OscarGoez/Ascensores_Malacates_hho",
     },
   ];
 
@@ -35,13 +50,28 @@ const Projects = () => {
             <h3>{p.title}</h3>
             <p>{p.desc}</p>
             <div className="tech-tags">
-              {p.tech.map((t, idx) => (
-                <span key={idx}>{t}</span>
+              {p.tech.map((tech, idx) => (
+                <span key={idx}>{tech}</span>
               ))}
             </div>
-            <a className="btn" href={p.link} target="_blank" rel="noreferrer">
-              {t("projects.view")}
-            </a>
+            <div className="project-buttons">
+              {p.link !== "#" && (
+                <a className="btn" href={p.link} target="_blank" rel="noreferrer">
+                  {p.link.includes("github.com") ? t("projects.view") : t("projects.view")}
+                </a>
+              )}
+              {p.github && p.github !== "#" && (
+                <a 
+                  className="btn secondary" 
+                  href={p.github} 
+                  target="_blank" 
+                  rel="noreferrer"
+                  style={{ marginLeft: "8px" }}
+                >
+                  GitHub
+                </a>
+              )}
+            </div>
           </article>
         ))}
       </div>

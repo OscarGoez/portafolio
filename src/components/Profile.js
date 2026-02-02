@@ -30,14 +30,7 @@ const Profile = () => {
           >
             <Github size={18} /> {t("profile.github")}
           </a>
-          <a
-            className="btn"
-            href="https://www.linkedin.com/in/oscargoez"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Linkedin size={18} /> {t("profile.linkedin")}
-          </a>
+          
         </div>
       </div>
     </header>

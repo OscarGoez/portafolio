@@ -19,22 +19,7 @@ const Contact = () => {
           <p>
             <a href="mailto:oscargoezhenao@gmail.com">oscargoezhenao@gmail.com</a>
           </p>
-        </div>
-
-        {/* LinkedIn */}
-        <div className="contact-card">
-          <Linkedin className="icon" size={28} />
-          <h3>LinkedIn</h3>
-          <p>
-            <a
-              href="https://www.linkedin.com/in/oscargoez"
-              target="_blank"
-              rel="noreferrer"
-            >
-              linkedin.com/in/oscargoez
-            </a>
-          </p>
-        </div>
+        </div>        
 
         {/* GitHub */}
         <div className="contact-card">

@@ -55,6 +55,17 @@ doc.add_paragraph(
 # ---------- EXPERIENCIA LABORAL ----------
 doc.add_heading("Experiencia Laboral", level=1)
 
+# Freelance
+doc.add_paragraph(
+    "Freelance — Automatización de Procesos (2023 – Actualidad)\n"
+    "• Diseño e implementación de bots en Python para tareas repetitivas y consultas web.\n"
+    "• Clasificación automática de documentos PDF y reportes.\n"
+    "• Arquitectura y desarrollo completo de sistema CRM para gestión de clientes, cotizaciones y facturación\n"
+    "• Diseño y desarrollo completo de aplicación web SPA para gestión inteligente de inventario doméstico\n"
+    "Consolida mi experiencia práctica en automatización, análisis de datos y desarrollo de soluciones funcionales."
+)
+
+
 # Altipal
 doc.add_paragraph(
     "Operario de Montacargas — Altipal S.A.S (Septiembre 2023 – Marzo 2025)\n"
@@ -65,14 +76,7 @@ doc.add_paragraph(
     "habilidades que hoy aplico al desarrollo tecnológico."
 )
 
-# Freelance
-doc.add_paragraph(
-    "Freelance — Automatización de Procesos (2023 – Actualidad)\n"
-    "• Diseño e implementación de bots en Python para tareas repetitivas y consultas web.\n"
-    "• Clasificación automática de documentos PDF y reportes.\n"
-    "• Creación de una app no-code para seguimiento médico con AppSheet.\n"
-    "Consolida mi experiencia práctica en automatización, análisis de datos y desarrollo de soluciones funcionales."
-)
+
 
 # Enterdev
 doc.add_paragraph(
@@ -101,7 +105,6 @@ doc.add_paragraph(
     "• Automatización con Python, Selenium\n"
     "• Manipulación y análisis de datos con Pandas y Excel\n"
     "• Desarrollo web con React y Node.js\n"
-    "• Análisis de información con Power BI y SQL\n"
     "• Control de versiones con GitHub"
 )
 
@@ -110,7 +113,9 @@ doc.add_heading("Proyectos Destacados", level=1)
 doc.add_paragraph(
     "• Bot de Automatización Excel → Web → Reporte: lectura de archivos Excel, consultas online y envío automático de reportes.\n"
     "• Clasificador de Facturas PDF: organización y clasificación automática de documentos.\n"
-    "• Sitio web profesional desarrollado para la empresa HHO Ascensores & Malacates. https://ascensoreshho.web.app/"
+    "• Sitio web profesional desarrollado para la empresa HHO Ascensores & Malacates. https://ascensoreshho.web.app/\n"
+    "• Sistema de Gestión HHO Ascensores: Plataforma web completa para administración de clientes, documentos financieros y métricas empresariales\n"
+    "• Sistema de Inventario Inteligente para Hogares: Aplicación web completa para gestión automatizada de productos del hogar\n"
 )
 
 # ---------- PORTAFOLIO Y GITHUB ----------
