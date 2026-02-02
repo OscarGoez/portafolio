@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Mail, FileDown, Linkedin } from "lucide-react";
+import { Github, Mail, FileDown, } from "lucide-react";
 import image from "../img/avatar1.jpg";
 import { useLanguage } from "../context/LanguageContext";
 
